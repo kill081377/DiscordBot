@@ -125,7 +125,7 @@ client.on('ready', () => {
         `${client.channels.size} Channels`
     ];
     client.user.setPresence({ game: { name: `${prefix}help | ${games[Math.round(Math.random()*games.length)]}`, type: 0 } });
-    client.user.setUsername('KhanBot');
+    client.user.setUsername('AdamXD');
     console.log('I am ready Jett!');
     console.log(`I have started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
   
@@ -168,7 +168,7 @@ client.on('message', message => {
     if (command === 'invite') {
         let embed = new Discord.RichEmbed(); 
         embed.setColor("#5e8fe0");
-        embed.addField("Invite me!", 'Use this link to invite me to **your** server!\nhttps://discordapp.com/oauth2/authorize?permissions=93184&scope=bot&client_id=307851997040738304');
+        embed.addField("Invite me!", 'Use this link to invite me to **your** server!\nhttps://discordapp.com/oauth2/authorize?permissions=93184&scope=bot&client_id=0000000');
         message.channel.sendEmbed(embed);
     } else
     
