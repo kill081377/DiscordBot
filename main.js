@@ -7,7 +7,7 @@
 const Discord = require('discord.js');
 const request = require('request');
 const client = new Discord.Client();
-const prefix = 'k.';
+const prefix = 'w.';
 
 const commands = [
     // Random
@@ -125,7 +125,7 @@ client.on('ready', () => {
         `${client.channels.size} Channels`
     ];
     client.user.setPresence({ game: { name: `${prefix}help | ${games[Math.round(Math.random()*games.length)]}`, type: 0 } });
-    client.user.setUsername('AdamXD');
+    client.user.setUsername('WildMadness');
     console.log('I am ready Jett!');
     console.log(`I have started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
   
