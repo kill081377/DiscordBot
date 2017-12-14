@@ -215,37 +215,37 @@ client.on('message', message => {
         if (args[0] === 'userinfo' || args[0] === 'userInfo') {
             let embed = new Discord.RichEmbed(); 
             embed.setColor("#ffff00");
-            embed.addField("Userinfo", 'Use **`k.userInfo <username>`** for user\'s statistics.');
+            embed.addField("Userinfo", 'Use **`b.userInfo <username>`** for user\'s statistics.');
             message.channel.sendEmbed(embed);
         } else
         if (args[0] === 'browse') {
             let embed = new Discord.RichEmbed(); 
             embed.setColor("#ffff00");
-            embed.addField("Browse", 'Use **`k.browse hot`** for top hotlist program.\nUse **`k.browse recent`** for most recent program.\nUse **`k.browse votes`** for highest voted program.');
+            embed.addField("Browse", 'Use **`b.browse hot`** for top hotlist program.\nUse **`b.browse recent`** for most recent program.\nUse **`k.browse votes`** for highest voted program.');
             message.channel.sendEmbed(embed);
         } else 
         if (args[0] === 'programdata' || args[0] === 'programData') {
             let embed = new Discord.RichEmbed(); 
             embed.setColor("#ffff00");
-            embed.addField("ProgramData", 'Use **`k.programData <program-id>`** for a program\'s data.');
+            embed.addField("ProgramData", 'Use **`b.programData <program-id>`** for a program\'s data.');
             message.channel.sendEmbed(embed);
         } else
         if (args[0] === 'discussion') {
             let embed = new Discord.RichEmbed(); 
             embed.setColor("#ffff00");
-            embed.addField("Discussion", 'Use **`k.discussion <username>`** for a user\'s discussion.');
+            embed.addField("Discussion", 'Use **`b.discussion <username>`** for a user\'s discussion.');
             message.channel.sendEmbed(embed);
         } else
         if (args[0] === 'badges') {
             let embed = new Discord.RichEmbed(); 
             embed.setColor("#ffff00");
-            embed.addField("Badges", 'Use **`k.badges <username>`** for a user\'s badge counts.');
+            embed.addField("Badges", 'Use **`b.badges <username>`** for a user\'s badge counts.');
             message.channel.sendEmbed(embed);
         } else
         if (args[0] === 'userprograms' || args[0] === 'userPrograms') {
             let embed = new Discord.RichEmbed(); 
             embed.setColor("#ffff00");
-            embed.addField("Badges", 'Use **`k.userPrograms <username>`** to get all a user\'s program stats.');
+            embed.addField("Badges", 'Use **`b.userPrograms <username>`** to get all a user\'s program stats.');
             message.channel.sendEmbed(embed);
         }
         else if (args.length === 0) {
@@ -259,7 +259,7 @@ client.on('message', message => {
         else {
             let embed = new Discord.RichEmbed();
             embed.setColor('#ff0000');
-            embed.addField('Error', 'That command is not defined for `help` to check. Use **`k.help`** to see commands.');
+            embed.addField('Error', 'That command is not defined for `help` to check. Use **`b.help`** to see commands.');
             message.channel.sendEmbed(embed);
         }
     } else
@@ -270,7 +270,7 @@ client.on('message', message => {
                 if (!JSON.parse(body)) {
                     let embed = new Discord.RichEmbed();
                     embed.setColor('#ff0000');
-                    embed.addField('Error', 'That username does not exist, use **`k.help userinfo`** for more.');
+                    embed.addField('Error', 'That username does not exist, use **`b.help userinfo`** for more.');
                     message.channel.sendEmbed(embed);
                     return;
                 }
